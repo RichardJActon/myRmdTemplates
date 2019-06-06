@@ -1,0 +1,67 @@
+---
+title: "<Title>"
+author: "Richard J. Acton"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_float: yes
+    df_print: paged
+  html_notebook:
+    fig_caption: yes
+    number_sections: yes
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    fig_caption: yes
+    df_print: kable
+bibliography: "`r normalizePath(params$bib)`"
+csl: "`r normalizePath(params$csl)`"
+link-citations: yes
+linkcolor: blue
+#runtime: shiny
+editor_options: 
+  chunk_output_type: inline
+params:
+  bib: "~/Documents/bibtex/library.bib"
+  csl: "~/Documents/bibtex/genomebiology.csl"
+  pwd: "~/Documents/PhD_Stuff/phd/<>"
+---
+
+# Introduction
+
+# Set-up
+
+## Libs
+
+```{r libs}
+suppressPackageStartupMessages({
+	library(tidyverse)
+})
+```
+
+## Env
+
+```{r env}
+knitr::opts_knit$set(root.dir = normalizePath(params$pwd))
+setwd(params$pwd)
+```
+
+# Data Read-in
+
+# Fxn
+
+# Body
+
+# Session Info
+
+```{r sessionInfo}
+sessionInfo()
+```
+
+# References
+
+<div id = "refs"></div>
