@@ -28,7 +28,7 @@ editor_options:
 params:
   bib: "~/Documents/bibtex/library.bib"
   csl: "~/Documents/bibtex/genomebiology.csl"
-  pwd: "~/Documents/PhD_Stuff/phd/<>"
+  pwd: ".."
 ---
 
 # Introduction
@@ -45,7 +45,7 @@ suppressPackageStartupMessages({
 
 ## Env
 
-```{r env}
+```{r setup}
 knitr::opts_knit$set(root.dir = normalizePath(params$pwd))
 setwd(params$pwd)
 ```
