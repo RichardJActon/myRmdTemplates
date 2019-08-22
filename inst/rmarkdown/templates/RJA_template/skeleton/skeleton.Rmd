@@ -9,6 +9,7 @@ output:
     toc: yes
     toc_float: yes
     df_print: paged
+    keep_md: yes
   html_notebook:
     fig_caption: yes
     number_sections: yes
@@ -40,6 +41,7 @@ params:
 ```{r libs}
 suppressPackageStartupMessages({
 	library(tidyverse)
+  library(here)
 })
 ```
 
